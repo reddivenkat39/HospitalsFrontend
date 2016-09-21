@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>
+            Doctor Registry
+        </title>
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<body>
+    <div class="doctorregistryclass" id="doctorregistryid">
+        <p>Doctor Registry Form</p>
+        <form class="doctorregistryformclass" id="doctorregistryformid">
+            <input type="text" value="" name="doctorname" class="doctornameclass" id="doctornameid" placeholder="doctor name">
+            <br>
+            <input type="text" value="" name="doctormail" class="doctormailclass" id="doctormailid" placeholder="doctor mail">
+            <br>
+            <select name="general-department">
+                <option value="nuerology">Neurology</option>
+                <option value="physio">Physio</option>
+                <option value="pulmonory">Pulmonory</option>
+                <option value="ent">ENT</option>
+                <option value="Gastro">Gastro</option>
+            </select>
+            <br>
+            <select name="incominghours">
+                <option value="8:00:00">8 a.m</option>
+                <option value="9:00:00">9 a.m</option>
+                <option value="10:00:00">10 a.m</option>
+            </select>
+            <br>
+            <select name="outgoinghours">
+                <option value="17:00:00">5 p.m</option>
+                <option value="18:00:00">6 p.m</option>
+                <option value="19:00:00">7 p.m</option>
+            </select>
+            <br>
+
+            <select name="speciality">
+                <option value="concussion">concussion</option>
+                <option value="neurogenetics">neurogenetics</option>
+                <option value="neuropathology">neuropathology</option>
+                <option value="hydrotherapy">hydroptherapy</option>
+                <option value="othopediac">othopediac</option>
+                <option value="lungcancer">lung cancer</option>
+                <option value="pulmonoryfibrosis">Pulmnory fibrosis</option>
+                <option value="ear">ear</option>
+                <option value="throat">throat</option>
+                <option value="gaestroentrology">gaestroentrology</option>
+                <option value="digestivetract">digestive tract</option>
+            </select>
+            <br>
+ <select name="DoctorRole">
+                <option value="Surgeon">Surgeon</option>
+                <option value="MD">MD</option>
+                <option value="Therapist">Therapist</option>
+                <option value="Practitioner">Practitioner</option>
+ </select>
+            <br>
+            <select name="fees">
+                <option value="100">$100</option>
+                <option value="200">$200</option>
+                <option value="300">$300</option>
+                <option value="400">$400</option>
+            </select>
+            <br>
+            <input type="password" value="" name="doctorpassword" class="doctorpassword" id="doctorpasswordid" placeholder="password">
+            <br>
+            <input type="button" value="submit" onclick="doctorformsubmit()">
+        </form>
+    </div>
+</body>
+<script src="./js/doctorregistry.js"></script>
+</html>

@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>
+        Hospitals
+    </title>
+ </head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/Homepagestyle.css">
+<body>
+    <div class="doctorsclass" id="doctorsid">
+        <div class="containerclass" id="containerid">
+            <p>Doctor Login</p>
+            <form name="doctorloginform" class="doctorloginclass" id="doctorloginformid">
+            <input type="text" value="" name="dctname" id="dctnameid" placeholder="email">
+            <br>
+            <input type="password" value="" name="dctpassword" id="dctpassword" placeholder="Password">
+            <br>
+ <input type="button" value="login" class="submitbutton" onclick="doctorlogin()">
+            </form>
+            <input type="button" value="register" onclick="doctorregisterfunction()" class="registering" id="doctorregister">
+        </div>
+    </div>
+    <div class="patientsclass" id="patientsid">
+        <p>Returning Patient</p>
+        <div class="containerclass" id="containerid">
+            <form method="POST" action="/patient">
+            <input type="text" value="" name="ptname" id="ptid" placeholder="PatientName">
+            <br>
+            <input type="password" value="" name="ptpassword" id="ptpasswordid" placeholder="Password">
+            <br>
+            <input type="submit" value="login" name="ptlogin" id="ptloginid" class="submitbutton">
+            </form>
+        </div>
+    </div>
+
+    <div class="emergencyregistry" id="emergencyregistrydivid">
+        <p>Emergency Form</p>
+    <div class="emergencyform" id="emergencyformid">
+        <form name="patientemergency" class="emergencyregistryform" id="emergencyregistryid">
+        <input type="text" id="fnameid" value="" name="firstname" class="fnameclass" placeholder="first name">
+        <br>
+        <input type="text" id="lnameid" value="" name="lastname" class="lnameclass" placeholder="last name">
+        <br>
+        <input type="text" id="age" value="" name="ages" class="ageclass" placeholder="age">
+        <br>
+        sex: Male<input type="radio" name="sex" value="male" > Female<input type="radio" name="sex" value="female">
+        <br>
+        <input type="text" value="" name="emailaddress" placeholder="email address">
+        <br>
+         <select name="ailments">
+            <option value="Migrane">Migrane</option>
+            <option value="Respiratory">Repiratory</option>
+            <option value="earpain">ear pain</option>
+            <option value="throatpain">throat pain</option>
+            <option value="indigestion">indigestion</option>
+            <option value="spinalpain">Spinal pains</option>
+        </select>
+        <br>
+        <select name="financialstatus">
+            <option value="low">Low</option>
+            <option value="mid">Mid</option>
+            <option value="high">High</option>
+        </select>
+        <br>
+        <select name="location">
+            <option value="10"><10 Miles</option>
+            <option value="20">>10 Miles</option>
+            <option value="30">>20 Milies</option>
+        </select>
+    <br>
+    <input type="button" value="submit" class="submitbutton" onclick="emergencyregistryfunc()">
+    </form>
+    </div>
+    </div>
+</body>
+<script src="./js/patientregistry.js"></script>
+<script src="./js/doctorlogin.js"></script>
+<script src="./js/doctorregistry.js"></script>
+<footer>
+</footer>
+<html>

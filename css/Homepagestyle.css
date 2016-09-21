@@ -1,0 +1,16 @@
+.containerclass{
+    height : 200px;
+    width : 200px;
+}
+
+.patientsclass{
+   position:absolute;
+   top:5;
+   right:0;
+}
+
+.emergencyregistry{
+ position : absolute;
+ top : 200;
+ right :50;
+}
